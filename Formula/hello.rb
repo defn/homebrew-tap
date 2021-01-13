@@ -5,21 +5,21 @@
 class Hello < Formula
   desc "hello"
   homepage "https://defn.sh/hello"
-  version "0.0.0-testing17"
+  version "0.0.0-testing18"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/defn/hello/releases/download/v0.0.0-testing17/hello_0.0.0-testing17_darwin_amd64.tar.gz"
-    sha256 "84d56a71ebfc0367cae3da91865c4104ddaadbb77c80400b759a26ed0445549d"
+    url "https://github.com/defn/hello/releases/download/v0.0.0-testing18/hello_0.0.0-testing18_darwin_amd64.tar.gz"
+    sha256 "8594f7fa3e2a3c01370c80a3ab7d71d920af7f6cb23893397b34971755587e69"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/defn/hello/releases/download/v0.0.0-testing17/hello_0.0.0-testing17_linux_amd64.tar.gz"
-    sha256 "fdb5c44a778b713bcac37ac94840419dbd9fdfb40a1ecb990032eb6b956724a1"
+    url "https://github.com/defn/hello/releases/download/v0.0.0-testing18/hello_0.0.0-testing18_linux_amd64.tar.gz"
+    sha256 "e150f62a5467afadc439df5f0ddc0f8f31cf8aa62f1a95b228938b8d724c595d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/defn/hello/releases/download/v0.0.0-testing17/hello_0.0.0-testing17_linux_arm64.tar.gz"
-    sha256 "f3dcaf71ebf9ea952561a0cde7a88a66df2c05a06eb75015b84e5feef189998d"
+    url "https://github.com/defn/hello/releases/download/v0.0.0-testing18/hello_0.0.0-testing18_linux_arm64.tar.gz"
+    sha256 "fa755f8d032c8630934ef4546b1529cff2f72b9ae0fe97fd68baa727b783e39b"
   end
 
   def install
