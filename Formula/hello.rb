@@ -11,15 +11,15 @@ class Hello < Formula
 
   if OS.mac?
     url "https://github.com/defn/hello/releases/download/v0.0.0-testing16/hello_0.0.0-testing16_darwin_amd64.tar.gz"
-    sha256 "6306d7ecf10558175f7f9cf2e0d44072edb7786c81c5b061ae55f0c0d9cc3fd2"
+    sha256 "db525bd20404034cfc6533c2b6350a7c1bdeb29319c3dd9b33886e2af79fd53b"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/defn/hello/releases/download/v0.0.0-testing16/hello_0.0.0-testing16_linux_amd64.tar.gz"
-    sha256 "d4b664edff14b95f4d221ec955757022d5f1c105fee4bec1c2d971d670c7041c"
+    sha256 "d8f841072196e6b136d2591638ce7d3c18f6939b833cc3f6c9e3f61489ea66b4"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/defn/hello/releases/download/v0.0.0-testing16/hello_0.0.0-testing16_linux_arm64.tar.gz"
-    sha256 "170b4b34f8f007f9c7718fabf80ecd0644dfb026951e6cea3894c28c17afc19e"
+    sha256 "2da928be278a1a8954ebc7d3799e393ff19deaee5333e45f5babeca2e7cddb4d"
   end
 
   def install
